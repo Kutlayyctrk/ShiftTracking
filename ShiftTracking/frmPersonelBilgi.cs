@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ShiftTracking
 {
-    public partial class frmPersonelGuncelle : Form
+    public partial class frmPersonelBilgi : Form
     {
-        public frmPersonelGuncelle()
+        public frmPersonelBilgi()
         {
             InitializeComponent();
         }

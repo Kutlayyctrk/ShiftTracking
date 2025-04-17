@@ -32,9 +32,10 @@ namespace ShiftTracking
                 case "Personel Sil":
                     yeniForm = new frmPersonelSil();
                     break;
-                case "Personel Güncelle":
-                    yeniForm = new frmPersonelGuncelle();
+                case "Personel Listesi Görüntüle":
+                    yeniForm = new PersonelListesi();
                     break;
+
                 case "Yeni Hafta Shifti Oluştur":
                     yeniForm = new frmYeniShift();
                     break;
@@ -61,12 +62,12 @@ namespace ShiftTracking
         {
             cmbislemler.Items.Add("Yeni Personel Ekle");
             cmbislemler.Items.Add("Personel Sil");
-            cmbislemler.Items.Add("Personel Güncelle");
+            cmbislemler.Items.Add("Personel Listesi Görüntüle");
             cmbislemler.Items.Add("Yeni Hafta Shifti Oluştur");
             cmbislemler.Items.Add("Mevcut Shifti Güncelle");
             cmbislemler.Items.Add("Geçmiş Shift Görüntüle");
         }
 
-       
+
     }
 }

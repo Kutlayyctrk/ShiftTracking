@@ -111,6 +111,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmGirisEkrani";
             Text = "Giriş Ekranı";
+            Load += frmGirisEkrani_Load;
             ResumeLayout(false);
             PerformLayout();
         }

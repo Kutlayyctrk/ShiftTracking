@@ -2,6 +2,13 @@ namespace ShiftTracking
 {
     public partial class frmGirisEkrani : Form
     {
+
+        private void frmGirisEkrani_Load(object sender, EventArgs e)
+        {
+            PersonelData.PersonelleriYukle(); // Program baþlarken JSON dosyasýndan yükle
+        }
+      
+
         public frmGirisEkrani()
         {
             InitializeComponent();
@@ -12,7 +19,7 @@ namespace ShiftTracking
             string kullaniciadi = txtUserName.Text;
             string sifre = txtPassword.Text;
 
-            if(kullaniciadi=="avenuechef"&& sifre=="ekip5594")
+            if (kullaniciadi == "a" && sifre == "aa")
             {
                 MessageBox.Show("Hoþgeldin Chef");
                 this.Hide();
@@ -29,5 +36,6 @@ namespace ShiftTracking
             }
 
         }
+
     }
 }

@@ -35,6 +35,7 @@
             // cmbislemler
             // 
             cmbislemler.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            cmbislemler.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbislemler.FormattingEnabled = true;
             cmbislemler.Location = new Point(300, 110);
             cmbislemler.Name = "cmbislemler";

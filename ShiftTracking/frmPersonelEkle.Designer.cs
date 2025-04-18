@@ -117,7 +117,7 @@
             // 
             cmbPozisyonEkle.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbPozisyonEkle.FormattingEnabled = true;
-            cmbPozisyonEkle.Items.AddRange(new object[] { "Mutfak Şefi", "Sous Şef", "Izgara 1", "Izgara 2", "Izgara 3", "Izgara 4", "Fritöz 1", "Fritöz 2", "Fritöz 3", "Fritöz 4", "Tava 1", "Tava 2", "Tava 3", "Tava 4", "Pizza-Soğuk 1", "Depo", "Pizza-Soğuk 2", "Pizza-Soğuk 3", "Pizza-Soğuk 4", "Bulaşık" });
+            cmbPozisyonEkle.Items.AddRange(new object[] { "Mutfak Şefi", "Sous Şef", "Izgara 1", "Izgara 2", "Izgara 3", "Izgara 4", "Fritöz 1", "Fritöz 2", "Fritöz 3", "Fritöz 4", "Tava 1", "Tava 2", "Tava 3", "Tava 4", "Pizza-Soğuk 1", "Pizza-Soğuk 2", "Pizza-Soğuk 3", "Pizza-Soğuk 4", "Depo", "Bulaşık" });
             cmbPozisyonEkle.Location = new Point(329, 252);
             cmbPozisyonEkle.Name = "cmbPozisyonEkle";
             cmbPozisyonEkle.Size = new Size(125, 28);
@@ -140,6 +140,7 @@
             Controls.Add(label1);
             Name = "frmPersonelEkle";
             Text = "Personel Ekle";
+            Load += frmPersonelEkle_Load;
             ResumeLayout(false);
             PerformLayout();
         }

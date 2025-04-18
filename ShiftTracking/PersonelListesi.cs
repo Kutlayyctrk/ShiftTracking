@@ -21,6 +21,12 @@ namespace ShiftTracking
         {
             dgwPersonelListe.DataSource = null;
             dgwPersonelListe.DataSource = PersonelData.AsciList;
+            dgwPersonelListe.Columns["Durum"].ReadOnly = true;
+        }
+
+        private void dgwPersonelListe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

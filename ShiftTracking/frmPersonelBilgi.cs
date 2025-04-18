@@ -16,5 +16,13 @@ namespace ShiftTracking
         {
             InitializeComponent();
         }
+
+        private void frmPersonelBilgi_Load(object sender, EventArgs e)
+        {
+            cmbpersonelbilgi.DataSource = null;
+            cmbpersonelbilgi.DataSource = PersonelData.AsciList;
+            cmbpersonelbilgi.ToString();
+           
+        }
     }
 }

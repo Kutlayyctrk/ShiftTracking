@@ -13,7 +13,7 @@ namespace ShiftTracking
 
         public string Department { get; set; }
         public string Position { get; set; }
-        public bool Durum { get; set; } = false; // true: aktif, false: pasif
+        public bool Durum { get; set; } = true; // true: aktif, false: pasif
         public override string ToString()
         {
             return $"{Name} {Surname} - {Department} ({Position}) [{(Durum ? "Aktif" : "Pasif")}]";
@@ -27,7 +27,7 @@ namespace ShiftTracking
             Surname = surname;
             Department = department;
             Position = position;
-            Durum = false; // default olarak çalışıyor
+            Durum = true; // default olarak çalışıyor
         }
 
     }

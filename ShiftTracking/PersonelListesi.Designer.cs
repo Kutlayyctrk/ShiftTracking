@@ -41,6 +41,7 @@
             dgwPersonelListe.RowHeadersWidth = 51;
             dgwPersonelListe.Size = new Size(899, 504);
             dgwPersonelListe.TabIndex = 0;
+            dgwPersonelListe.CellContentClick += dgwPersonelListe_CellContentClick;
             // 
             // PersonelListesi
             // 

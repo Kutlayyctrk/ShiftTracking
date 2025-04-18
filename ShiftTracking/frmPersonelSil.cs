@@ -34,7 +34,9 @@ namespace ShiftTracking
             if (cmbsilinecekpersonel.SelectedIndex >= 0)
             {
                 Asci secilenAsci = (Asci)cmbsilinecekpersonel.SelectedItem;
-                PersonelData.AsciList.Remove(secilenAsci);
+                secilenAsci.Durum = false; // Durumu pasif yap
+
+
 
                 PersonelData.PersonelleriKaydet(); // Silme işlemini dosyaya da yansıt
 

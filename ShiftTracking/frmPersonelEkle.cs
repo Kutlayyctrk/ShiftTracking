@@ -60,6 +60,10 @@ namespace ShiftTracking
             }
         }
 
+        private void frmPersonelEkle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
